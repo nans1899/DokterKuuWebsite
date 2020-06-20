@@ -1,0 +1,929 @@
+@charset "ISO-8859-1";
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+}
+  
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+body{
+    font-family: 'Prompt', sans-serif;
+	background-image: url(Pictures/beebe9IMG.png);
+  background-size: cover;
+}
+a {
+  color: inherit;
+}
+
+ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+.svg-inline--fa {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+
+.nav-wrapper {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 20px;
+  color: white;
+  display: grid;
+  z-index: 9999;
+  grid-template-columns: 30% auto;
+  background-color: #3b4243;
+}
+
+.nav-wrapper a{
+    letter-spacing: .1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-wrapper a:hover {
+  cursor: pointer;
+  color: #eee;
+}
+
+.nav-items {
+  text-align: right;
+  padding-top: 10px;
+  padding-left:0;
+}
+
+.burger-icon {
+  display: none;
+}
+
+.list-item {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+  transition: .25s;
+}
+
+.icon:after {
+  content: " +";
+  transform: rotate(45deg);
+}
+
+.logo .fas,.logo strong{
+	color:black;
+	text-shadow:1px 1px 0px white;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+    grid-template-areas: 
+      "featuredMain featuredMain featuredMain"
+      "contentMain contentMain contentMain";
+  color: #FFF;
+	
+}
+
+.wrapper > .featured, .wrapper > div, .wrapper > .KontenUtama, .wrapper > .main-sidebar {
+  padding: 20px;
+}
+
+.featured {
+  grid-area: featuredMain;
+  min-height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)) border-box, url(Pictures/dokterkuulogo.png) no-repeat center center;
+  background-size: cover;
+	display:grid;
+	align-content: flex-end;
+}
+
+
+.KontenUtama,.featured, > div,.main-sidebar {
+  	box-shadow:0px 0px 4px rgba(0,0,0,.25);
+
+}
+
+.KontenUtama{
+    grid-area: contentMain;
+	z-index: 100;
+	background-color:rgba(255,255,255,.35);
+	color:#444;
+		line-height:1.5em;
+}
+
+.aboutus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aboutheader {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.aboutcontent {
+  font-family: 'Nunito' ,sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.profile__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.founder__header {
+  line-height: 1.6;
+  font-family: 'Nunito' ,sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+.founder__content{
+  font-family: 'Nunito' ,sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.profile {
+  font-family: 'Nunito' ,sans-serif;
+  text-align: center;
+  max-width: 550px;
+  padding: 30px;
+  margin-right: 30px;
+}
+.profile1 {
+  font-family: 'Nunito' ,sans-serif;
+  text-align: center;
+  width: 500px;
+  padding: 30px; 
+  margin-left: 20px;
+}
+
+.profile__image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.profile__name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.profile__title {
+  margin-bottom: 20px;
+}
+
+.profile__detail {
+  display: flex;
+  align-items: center;
+  font-family: 'Nunito' ,sans-serif;
+  justify-content: center;
+  font-size: 0.7em;
+}
+
+
+.Install_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1160px;
+  height: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.KontainerInstall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Nunito' ,sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-weight: bold;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.playstore {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 00.2);
+  padding: 0 100px 0 100px;
+  border-radius: 10%;
+  width: 400px;
+  height: 240px;
+
+}
+.appstore {
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 00.2);
+  padding: 10px;  
+  border-radius: 10%;  
+  margin-left: 40px;
+  height: 240px;
+}
+
+.store__image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+.store__image0{
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 50%;
+margin: 0 auto 20px auto;
+display: block;
+}
+
+
+.store__name {
+  font-size: 1em;
+  font-family: 'Nunito' ,sans-serif;
+  text-align: center;
+}
+
+
+.footer {
+  display: grid;
+  background: linear-gradient(#333, rgba(0, 0, 0, 0.6)), url(https://source.unsplash.com/1600x400/?Hospital) no-repeat center bottom;
+  background-size: cover;
+  margin: auto;
+  margin-top: 10px;
+  grid-template-columns: minmax(20px, 300px) minmax(20px, 300px) minmax(20px, 300px) minmax(20px, 300px);
+  justify-content: center;
+  grid-template-rows: 1fr 1fr;
+  background-color: #333;
+  color: #ccc;
+  max-height: 750px;
+}
+
+
+.footer > div{
+	  padding:25px;
+
+}
+.copyright {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  grid-column: 1/-1;
+}
+
+.footer-list > li {
+  display: block;
+}
+
+
+@keyframes navLinkFade {
+      from {
+            opacity: 0;
+            transform: translateX(50px);
+
+
+      }
+
+      to {
+            opacity: 1;
+            transform: translateX(0px);
+
+      }
+
+}
+
+
+.slideshow {
+      width: 100%;
+      height: 70vh;
+      position: relative;
+      overflow: hidden;
+}
+
+.slideshow-item {
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      opacity: 0;
+      animation: cycleImages 31s infinite;
+}
+
+
+.slideshow-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: zoom 41s infinite;
+
+
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img {
+      animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img {
+      animation-delay: 8s;
+}
+
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img {
+      animation-delay: 18s;
+}
+
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img {
+      animation-delay: 28s;
+}
+
+
+
+
+
+.slideshow-item-text {
+      max-width: 40%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, .8);
+      color: #000000;
+      padding: 10rem 5rem;
+}
+
+.slideshow-item-text h5 {
+      font-size: 0.9rem;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 3px;
+      margin-bottom: 2.5rem;
+}
+
+.slideshow-item-text p {
+      font-size: 0.4rem;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 1px;
+      font-weight: 300;
+}
+
+@keyframes cycleImages {
+      25% {
+            opacity: 1;
+
+      }
+
+      40% {
+            opacity: 0;
+
+      }
+
+
+}
+
+@keyframes zoom {
+      100% {
+            transform: scale(1);
+      }
+}
+
+
+/* BAGIAN BUTTON PELAJARI LANJUT*/
+@media screen and (max-width: 1300px){
+  .PelajariLanjut{
+    bottom: 20%;
+  }
+
+  .profile{
+    max-width: 300px;
+  }
+  .profile1{
+    max-width: 300px;
+  }
+
+  .KontainerInstall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+  .playstore{
+    max-width: 400px;
+  }
+  .appstore{
+    max-width: 355px;
+  }
+
+  .KontainerInstall {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.store__name{
+  font-size: 0.9em;
+}
+ 
+
+}
+
+
+/* INI BAGIAN TABLET*/
+@media screen and (max-width: 950px) {
+  .wrapper {
+    grid-template-areas: 
+      "featuredMain featuredMain featuredMain"
+      "contentMain contentMain contentMain";
+  color: #FFF;
+  }
+
+   .profile{
+    max-width: 300px;
+  }
+  .profile1{
+    max-width: 300px;
+  }
+
+  .nav-items {
+    grid-column: 1/5;
+    text-align: center;
+  }
+
+  .logo {
+    grid-column: 1/5;
+    text-align: center;
+  }
+
+  .nav-wrapper {
+    margin-top: 0;
+  }
+
+ .slideshow-item-text {
+            max-width: 100%;
+            padding: 5rem 1rem;
+      }
+
+      .slideshow-item-text h5 {
+            font-size: 4rem;
+            line-height: 1.6;
+      }
+
+
+
+.profile__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 600px;
+  width: 730px;
+}
+
+.founder__header {
+  font-family: 'Nunito' ,sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.founder__content{
+  font-family: sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.profile {
+  font-family: 'Nunito' ,sans-serif;
+  text-align: center;
+  width: 500px;
+  padding: 30px;
+}
+.profile1 {
+  font-family: 'Nunito' ,sans-serif;
+  text-align: center;
+  width: 500px;
+  padding: 30px;
+}
+
+.profile__image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.profile__name {
+  font-size: 1.2em;
+  font-family: 'Nunito' ,sans-serif;
+  font-weight: bold;
+}
+
+.profile__title {
+  margin-bottom: 20px;
+}
+
+.profile__detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7em;
+  font-family: 'Nunito' ,sans-serif;
+}
+
+.Install_wrapper {
+  width: 730px;
+  height: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.KontainerInstall {
+  font-family: 'Nunito' ,sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.playstore {
+  width: 300px;
+  height: 240px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 00.2);
+  border-radius: 10%;
+
+}
+.appstore {
+  width: 300px;
+  height: 240px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 00.2); 
+  border-radius: 10%;  
+  margin-left: 40px;
+}
+
+.store__image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.store__image0{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+.store__name {
+  font-size: 0.7em;
+  font-family: 'Nunito' ,sans-serif;
+  text-align: center;
+}
+
+
+}
+
+/* BAGIAN MOBILE DEVICE */
+@media screen and (max-width: 690px) {
+  .logo {
+    grid-column: 1/3;
+    padding-top: 7px;
+  }
+
+  .nav-items {
+    grid-column: 1/5;
+    text-align: center;
+  }
+    
+    .nav-items li {
+    display:block;
+  }
+
+  .burger-icon {
+    grid-column: 4/5;
+    justify-self: end;
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+  .burger-icon:hover {
+    cursor: pointer;
+  }
+
+  .featured h1 {
+    font-size: 30px;
+  }
+
+   .wrapper {
+    grid-template-areas: 
+      "featuredMain featuredMain featuredMain"
+      "contentMain contentMain contentMain";
+  	color: #FFF;
+  }
+  
+.mobile-hide {
+    display: none;
+  }
+
+.mobile-show{
+	display:block;
+}
+
+  .burger-icon {
+    display: inline-block;
+  }
+
+  .footer > div{
+	grid-column: 1/-1;
+  }
+
+
+.slideshow-item-text {
+            max-width: 100%;
+            padding: 2rem;
+            top: initial;
+            bottom: 0;
+            transform: initial;
+      }
+
+      .slideshow-item-text h5 {
+            font-size: 1rem;
+      }
+
+      .slideshow-item-text p {
+            font-size: 0.5rem;
+      }
+
+ .profile__wrapper {
+  height: 1000px;
+  width: 350px;
+}
+
+.aboutheader {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.aboutcontent {
+  font-family: 'Nunito' ,sans-serif;
+  font-size: 0.8em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.founder__header {
+  font-family: 'Nunito' ,sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.founder__content{
+  font-family: 'Nunito' ,sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.profile {
+  font-family: 'Nunito' ,sans-serif;
+  text-align: center;
+  max-width: 500px;
+  padding: 30px;
+  margin-left: 20px;
+}
+.profile1 {
+  font-family: 'Nunito' ,sans-serif;
+  text-align: center;
+  max-width: 500px;
+  padding: 30px;
+  margin-right: 30px;
+}
+
+.profile__image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.profile__name {
+  font-size: 1.2em;
+  font-family: 'Nunito' ,sans-serif;
+  font-weight: bold;
+}
+
+.profile__title {
+  margin-bottom: 20px;
+}
+
+.profile__detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7em;
+  font-family: 'Nunito' ,sans-serif;
+}
+
+.Install_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 500px;
+  width: 350px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+.KontainerInstall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.playstore {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding: 0 0 0 0;
+  border-radius: 10%;
+  margin: 0 auto 20px auto;
+
+  align-content: center;  
+}
+.appstore {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.store__image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+.store__image0{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.store__image0{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px auto;
+
+}
+
+.store__name {
+  font-size: 0.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+}
+
+
+@media screen and (max-width: 490px){
+  html{
+    width: 470px;
+  }
+
+
+  .Install_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 700px;
+    width: 350px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+  }
+
+  .KontainerInstall{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 280px;
+    margin-right: 280px;
+  }
+
+  .playstore{
+    width: 245px;
+    height: 200px;
+    padding: 0 0 0 0;
+    object-fit: cover;
+    border-radius: 10%;
+    margin: 0 0 20px 0 ;
+    display: block;
+  }
+
+  .appstore{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin: 0 0 50px 0;
+    display: block;
+  }
+
+  .store__image{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin 0 auto 2px auto;
+    display: block;
+  }
+
+  .store__image0{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin :0 auto 2px auto;
+    display: block;
+  }
+  .store__name{
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+}
