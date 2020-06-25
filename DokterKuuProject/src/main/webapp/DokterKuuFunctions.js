@@ -27,6 +27,8 @@ var scroll = new SmoothScroll('a[href*="#"]',{
 });
 
 
+
+
 /*$('.list-items a').on('click', function(e){
 	if (this.hash !== '') {
 		e.preventDefault();

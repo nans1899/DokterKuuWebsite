@@ -39,6 +39,11 @@ href="Pictures\favicon-16x16.png">
 
 <script src="DokterKuuFunctions.js"></script>
 
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAzNZdPhnGEWeQefl1WMhK_4oe0wmbuZM&callback=initMap">
+</script>
+      
+
 <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -46,7 +51,6 @@ href="Pictures\favicon-16x16.png">
 </head>
 
 <body id="home">
-
 <nav class="nav-wrapper">
   <div class="logo"> 
       <a href="#home"><img src="Pictures/weblogo.png" alt="LogoDokterkuu" style="width:125px;height:50px;"></a>
@@ -57,6 +61,7 @@ href="Pictures\favicon-16x16.png">
     <li class="list-item"><a href="#Pengembang">Team Pengembang</a></li>
     <li class="list-item"><a href="#Unduh">Unduh Aplikasi</a></li>
     <li class="list-item"><a href="#footer">Hubungi Kita</a></li>
+    <li class="list-item"><a>Login</a></li>
   </ul>
 </nav>
 <div class="main-wrapper">
@@ -159,7 +164,7 @@ href="Pictures\favicon-16x16.png">
     <h3 class="logo">Temukan Kita!</h3>
     <br/>
     <p>Alamat</p>
-    <div class="mapouter"><div class="gmap_canvas"><iframe width="325" height="325" id="gmap_canvas" src="https://maps.google.com/maps?q=Kukusan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/private-internet-access-coupon/">private internet acccess sale</a></div><style>.mapouter{position:relative;text-align:right;height:325px;width:325px;}.gmap_canvas {overflow:hidden;background:none!important;height:325px;width:325px;}</style></div>
+    <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Kukusan&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a href="https://www.embedgooglemap.net/blog/private-internet-access-coupon/">private internet acccess sale</a></div><style>.mapouter{position:relative;text-align:right;height:325px;width:325px;}.gmap_canvas {overflow:hidden;background:none!important;height:325px;width:325px;} #gmap_canvas{overflow:hidden;background:none!important;height:325px;width:325px;}</style></div>
     <p>Jl. Mandor Goweng Rt05/ Rw03, Kukusan, Kecamatan Beji, Kota Depok, Jawa Barat 16425</p>
     <p>081932688050</p>
     <p>DokterKuu@support.com</p>
@@ -169,4 +174,30 @@ href="Pictures\favicon-16x16.png">
   <div class="copyright">DokterKuu &copy; 2020</div>
 </footer>
 </body>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAW3iFfg8NdhpDqxxG54pm1Dv4VnUYI4yo",
+    authDomain: "gleaming-orbit-280822.firebaseapp.com",
+    databaseURL: "https://gleaming-orbit-280822.firebaseio.com",
+    projectId: "gleaming-orbit-280822",
+    storageBucket: "gleaming-orbit-280822.appspot.com",
+    messagingSenderId: "573897595889",
+    appId: "1:573897595889:web:60f08986376d1717b54250",
+    measurementId: "G-WLFW1N11NZ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 </html>
