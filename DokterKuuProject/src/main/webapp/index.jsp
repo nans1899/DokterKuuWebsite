@@ -25,6 +25,8 @@ href="Pictures\favicon-16x16.png">
 
 <link rel="manifest" href="/site.webmanifest">
 
+<script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -39,14 +41,11 @@ href="Pictures\favicon-16x16.png">
 
 <script src="DokterKuuFunctions.js"></script>
 
-<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAzNZdPhnGEWeQefl1WMhK_4oe0wmbuZM&callback=initMap">
-</script>
-      
-
 <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -60,11 +59,13 @@ href="Pictures\favicon-16x16.png">
     <li class="list-item"><a href="#aboutus">Tentang</a></li>
     <li class="list-item"><a href="#Pengembang">Team Pengembang</a></li>
     <li class="list-item"><a href="#Unduh">Unduh Aplikasi</a></li>
+    <li class="list-item"><a href="#tableArtikel">Artikel Terbaru</a></li>
     <li class="list-item"><a href="#footer">Hubungi Kita</a></li>
-    <li class="list-item"><a>Login</a></li>
+    <li class="list-item" id="buttonhide"><a href="LoginPage.jsp">Login</a></li>
   </ul>
 </nav>
 <div class="main-wrapper">
+
   <div class="wrapper">
     <div class="featured">      
     
@@ -101,10 +102,10 @@ href="Pictures\favicon-16x16.png">
   
       <div class="aboutus">
         <div class="aboutheader"><h1>Tentang DokterKuu</h1></div>
-        <div class="aboutcontent" id="Pengembang"><p>DokterKuu adalah aplikasi kesehatan dimana pengguna dapat mencari artikel-artikel kesehatan yang berhubungan dengan penyakit-penyakit berdasarkan jenis kesehatan tertentu. Pengguna juga dapat membuat janji dengan tenaga kesehatan terdekat melalui aplikasi DokterKuu jika diperlukan. DokterKuu hadir untuk membantu semua orang untuk mendapatkan pengetahuan mengenai kesehatan dimanapun dan kapanpun, karena kami percaya bahwa kesehatan seharusnya didapatkan dengan mudah oleh siapapun.</p>
+        <div class="aboutcontent"><p>DokterKuu adalah aplikasi kesehatan dimana pengguna dapat mencari artikel-artikel kesehatan yang berhubungan dengan penyakit-penyakit berdasarkan jenis kesehatan tertentu. Pengguna juga dapat membuat janji dengan tenaga kesehatan terdekat melalui aplikasi DokterKuu jika diperlukan. DokterKuu hadir untuk membantu semua orang untuk mendapatkan pengetahuan mengenai kesehatan dimanapun dan kapanpun, karena kami percaya bahwa kesehatan seharusnya didapatkan dengan mudah oleh siapapun.</p>
       </div>
 
-      <div class="profile__wrapper">
+      <div class="profile__wrapper" id="Pengembang">
     <div class="founder__header"><H1>Founder dari DokterKuu</H1>
     </div>
     <div class="founder__content"><p>Inilah Orang-Orang Dibalik Semangat Dari DokerKuu Untuk Terus Berkarya dan Memastikan Bahwa Kesehatan Adalah Suatu Hal Yang Mudah Diraih</p>
@@ -145,11 +146,18 @@ href="Pictures\favicon-16x16.png">
     </div>
 
   </div>
-
-
-
-
-    </div>
+  
+  
+  <table id="tableArtikel" class="tableartikel">
+	<tbody>
+		<tr>
+			<th scope="col"></th>				
+			<th scope="col">Judul Artikel</th>	
+			<th scope="col">Preview Artikel</th>		
+			<th scope="col">Tanggal Artikel</th>
+		</tr>
+	</tbody>
+</table>
 
   </div>
 
@@ -157,6 +165,7 @@ href="Pictures\favicon-16x16.png">
 
 </div>
 
+</div>
 
 
 <footer class="footer" id="footer">
@@ -164,7 +173,7 @@ href="Pictures\favicon-16x16.png">
     <h3 class="logo">Temukan Kita!</h3>
     <br/>
     <p>Alamat</p>
-    <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Kukusan&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a href="https://www.embedgooglemap.net/blog/private-internet-access-coupon/">private internet acccess sale</a></div><style>.mapouter{position:relative;text-align:right;height:325px;width:325px;}.gmap_canvas {overflow:hidden;background:none!important;height:325px;width:325px;} #gmap_canvas{overflow:hidden;background:none!important;height:325px;width:325px;}</style></div>
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="325" height="325" id="gmap_canvas" src="https://maps.google.com/maps?q=Kukusan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/private-internet-access-coupon/">private internet acccess sale</a></div><style>.mapouter{position:relative;text-align:right;height:325px;width:325px;}.gmap_canvas {overflow:hidden;background:none!important;height:325px;width:325px;}</style></div>
     <p>Jl. Mandor Goweng Rt05/ Rw03, Kukusan, Kecamatan Beji, Kota Depok, Jawa Barat 16425</p>
     <p>081932688050</p>
     <p>DokterKuu@support.com</p>
@@ -175,13 +184,14 @@ href="Pictures\favicon-16x16.png">
 </footer>
 </body>
 
-
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
 
 <script>
   // Your web app's Firebase configuration
@@ -198,8 +208,48 @@ href="Pictures\favicon-16x16.png">
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+  
+	 	  	  	  	 	  
+	  var table = document.getElementById("tableArtikel");
+	  
+	  var rowdashboard = 1;
+	  
+		firebase.database().ref("/Artikel").once("value", function(snapshot){
+			
+			if(snapshot.val()){
+				snapshot.forEach(function(childSnapshot){
+					var childData = childSnapshot.val();
+					
+					var row = table.insertRow(rowdashboard);
+					
+					  var cell0 = row.insertCell(0)
+					  var cell1 = row.insertCell(1);
+					  var cell2 = row.insertCell(2);
+					  var cell3 = row.insertCell(3);
+					  
+					  
+					  cell0.insertAdjacentHTML('beforeend', '<img width="70%" src=" '+childData.Foto_Artikel+' " >');
+					  cell1.appendChild(document.createTextNode(childData.Judul_Artikel));
+					  cell2.appendChild(document.createTextNode(childData.Preview_Artikel));
+					  cell3.appendChild(document.createTextNode(childData.Tanggal_Artikel));
+					
+					
+					  rowdashboard = rowdashboard + 1;
+				});
+			}else{
+				hidecomponents();
+			}
+			
+			
+					  		 		
+	  });
+	  	  	  function hidecomponents(){
+	  	  		  var hide = document.getElementById("tabelartikel");
+	  	  		  hide.style.display = "none";
+	  	  	  }
+  
+     
 </script>
-
 
 
 </html>

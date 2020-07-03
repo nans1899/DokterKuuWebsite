@@ -77,13 +77,22 @@ href="Pictures\favicon-16x16.png">
           
           <input id="pass" type="password" name="" placeholder="Enter Password" required>
           
-          <input id="loginButton" type="submit" onclick="login()" name="" value="Login">
+         
           
-          <!--  <button id="loginButton" onclick="login()">Login</button>-->
+          <!--<button class="btn" id="loginButton" onclick="login()">Login</button>  -->
+          
+          
+          	   <input id="loginButton" type="submit" onclick="login()" name="" value="Login">
+          	   
+          	   
+               <input id="signinButton" type="submit" name="" value="Sign Up">                              
                                              
-		  <input id="signinButton" type="submit" name="" value="Sign Up">
-		                                               
-          <!--<button id="signinButton">Sign Up</button>-->
+		  
+		                                             
+		                                           
+          <!--<button class="btn" id="signinButton">Sign Up</button>   -->
+          
+          
           <a href="#">Dont Have an Account?</a>
           
           

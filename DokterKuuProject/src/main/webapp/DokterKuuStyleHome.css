@@ -826,7 +826,7 @@ display: block;
   }
 
   .nav-items {
-    grid-column: 1/5;
+    grid-column: 1/6;
     text-align: center;
   }
 
